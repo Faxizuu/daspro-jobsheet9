@@ -10,9 +10,11 @@ public class ArrayNilai11 {
             nilaiAkhir[i] = input.nextInt();
         }
 
+        System.out.println("Daftar mahasiswa yang lulus:");
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
-            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
+            }
         }
 
         input.close();
